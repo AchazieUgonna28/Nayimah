@@ -4,29 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acha's Project</title>
-    <link rel="stylesheet" href="The style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="/Users/ugonnaachazie/Downloads/IMG_5698.PNG" alt="Apple gadgets" class="apple">
+    <img src="/images/IMG_5698.PNG" alt="Apple gadgets" class="apple">
     <h2>Apple Gadgets Giveaway</h2>
     <p>Archer Systems have gotten a new partnership with apple company. The owner just clocked 50 years and would want to celebrate by giving out some apple gadgets to a few lucky people. <br> To qualify for the giveaway all you have to do are: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero qui consequatur obcaecati quos placeat dicta cum recusandae aperiam quia fuga porro iste accusamus ipsam sed iusto, explicabo dolores in.</p>
     <h4>Giveaway ends on Wednesday 6th March, 2024 at 11:30am</h4>
     <p id="timer" class="timer"></p>
-    <script>
-        var countdownDate = new Date("March 6, 2024 11:30:00").getTime();
-        var countdownFunction = setInterval(function(){
-            var now = new Date().getTime();
-            var distance = countdownDate - now;
-            var days = Math.floor(distance/(1000*60*60*24));
-            var hours = Math.floor((distance % (1000*60*60*24))/ (1000*60*60));
-            var minutes = Math.floor((distance % (1000*60*60))/ (1000*60));
-            var seconds = Math.floor((distance % (1000*60))/1000);
-            document.getElementById("timer").innerHTML= days+"days: "+hours+"hours: "+ minutes+"minutes: "+ seconds+"s ";
-            if (distance < 0){
-                clearInterval(countdownFunction);
-                document.getElementById("timer").innerHTML= "Sorry it has expired";
-            }
-        },1000);
+
+<p>Lorem ipsum dolor sit.</p>
+
+    <script src="script.js">
     </script>
 </body>
 </html>
